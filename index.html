@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="logo_32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="logo_180x180.png">
+
+<title>Alauda & Laurentius</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+.hero {
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
+    url("1aurentius.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+.hero h1 {
+  font-size: 64px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 22px;
+  margin: 6px 0;
+}
+section {
+  padding: 80px 20%;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+  border: 3px solid #0077b5;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.box {
+  height: 480px;
+  background: #e0e0e0;
+  border: 2px dashed #999;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.contact {
+  background: #f4f4f4;
+}
+.company-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px 0;
+}
+.company-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #333;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.company-link:hover {
+  background: #eee;
+}
+.company-link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111;
+  color: white;
+  font-size: 13px;
+}
+footer a {
+  color: #aaa;
+}
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.logo-slot {
+  width: 56px;
+  height: 56px;
+  background: #222;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.logo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Forside</a>
+  <a href="#omos">Om os</a>
+  <a href="#vision">Vision</a>
+  <a href="#raadgivning">Rådgivningsydelser</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<div class="hero" id="home">
+  <div>
+ <!--   <h1>(Online-Beta-Udgave)</h1> -->   
+    <h1>Alauda & Laurentius</h1>
+    <p>Rådgivning hvor der tages ansvar</p>
+    <p><i>Identitet er integritet</i></p>
+  </div>
+</div>
+
+<section id="omos">
+  <h2>Om os</h2>
+
+  <h3>Lars Emmery-Nørholm</h3>
+  <img src="lars.png" alt="Lars Emmery-Nørholm" class="profile-img">
+  <p>Jeg er uddannet bygningsingeniør fra DTU i 2011.</p>
+  <p>Gennem de sidste 15 år har jeg opbygget en solid erfaring med projektering og projektledelse inden for store infrastrukturelle anlægsprojekter.</p>
+  <p>Jeg har in-house erfaring fra de store rådgivningsvirksomheder og kender branchens fordele og ulemper.</p>
+  <p>Jeg har desuden stor erfaring med udbudsmateriale og entrepriseretten, og jeg kan derfor være med hele vejen fra projektets start til dets aflevering og sikre en professionel levering i høj kvalitet.</p>
+  <p>I dag er jeg selvstændig og tilbyder rådgivning inden for især vejafvanding, tankanlæg og stål.</p>
+  <p>Jeg har desuden en jurist med om bord til at gennemgå kontrakter, strukturel planlægning, generel juridisk kvalitetssikring samt til at indgå som mødeleder.</p>
+
+  <h3>Lærke Emmery-Nørholm</h3>
+  <img src="lærke.png" alt="Lærke Emmery-Nørholm" class="profile-img">
+  <p>Jeg er uddannet jurist fra KU i 2019.</p>
+  <p>Jeg er uddannet lærer fra Professionshøjskolen Metropol i 2010.</p>
+  <p>I dag arbejder jeg med juridisk rådgivning med fokus på kontraktret og entrepriseret.</p>
+  <p>Jeg har desuden erfaring med strukturel planlægning og generel juridisk kvalitetssikring under både nationale regler, EU-regler og internationale samarbejdsorganisationer.</p>
+</section>
+
+<section id="vision">
+  <h2>Vision</h2>
+  <p>
+    Vi leverer projektstyring af høj kvalitet med fokus på AI-projektering.
+    Den faglige integritet er vores brand, og vi er altid garant for, at I som kunde oplever dette fra start til slut i projektet.
+  </p>
+  <p>
+    Med flere års erfaring inden for højhastighedsprojektering har jeg set, hvordan projekter kompromitteres af mangelfulde og tidspressede løsninger,
+    fordi planlægning og detaljegraden af projektindholdet både nedprioriteres og undervurderes på bekostning af faglig integritet og knowhow.
+    Dette får I ikke hos os. Her er planlægning og en høj faglig kvalitet hjørnestenene i måden, vi arbejder på.
+  </p>
+  <p>
+    Den teknologiske udvikling går hurtigt, og det er et grundvilkår, at være på forkant med den nyeste viden.
+    Det er ikke altid, at nyt er godt, men vi er altid omstillingsparate og hurtige til at implementere nye værktøjer,
+    som sikrer en fortsat høj og forbedret kvalitet i vores arbejde.
+  </p>
+</section>
+
+<section id="raadgivning">
+  <h2>Rådgivningsydelser</h2>
+  <p>
+    Alauda & Laurentius tilbyder rådgivning baseret på ansvar, faglighed og integritet.
+    Vi arbejder med et klart fokus på kvalitet og tillid i samarbejdet med vores klienter.
+  </p>
+
+  <h3>Projekter</h3>
+  <p>
+    Her kan du læse mere om de projekter, hvor vi har medvirket. Listen over projekter finder du også på LinkedIn. Den opdateres løbende, og er senest udskrevet torsdag den 16. april 2026:&nbsp;
+    <a href="Projekter.pdf" target="_blank">PROJEKTER</a>
+  </p>
+
+  <!-- ROW 1: Sundkrogsgade -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">Byggemodning af Sundkrogsgade (2. etape)</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">jan. 2025 – sep. 2025 &nbsp;|&nbsp; Tilknyttet Udviklingsselskabet By &amp; Havn</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Bygherre</li>
+        <li>Bygge-, teknik- og økonomimøder</li>
+        <li>Udledningstilladelser</li>
+        <li>Trafikomlægninger</li>
+        <li>DALUX projektadministrator</li>
+        <li>Økonomistyring</li>
+        <li>Kontraktstyring</li>
+        <li>Tilsyn på pladsen</li>
+        <li>Intern koordinering (Kranparken)</li>
+        <li>Ekstern koordinering (HOFOR og KK)</li>
+        <li>Tilsyn (daglig rundering)</li>
+        <li>Arealdisponering</li>
+      </ul>
+
+    </div>
+
+    <!-- Right: image -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+      <img src="PS_Sundkrogsgade_X1.jpg" alt="PS_Sundkrogsgade" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+
+  </div>
+
+  <!-- ROW 2: Røerkanal Vest -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">Roerkanal Vest (spuns og jordarbejder)</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">jan. 2025 – aug. 2025 &nbsp;|&nbsp; Tilknyttet Udviklingsselskabet By &amp; Havn</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Bygherre</li>
+        <li>Bygge-, teknik- og økonomimøder</li>
+        <li>Udledningstilladelser</li>
+        <li>Aftaler med arealinddragelse og dispositionsret</li>
+        <li>DALUX projektadministrator</li>
+        <li>Økonomistyring</li>
+        <li>Kontraktstyring</li>
+        <li>Tilsyn på pladsen</li>
+        <li>Intern koordinering (Kranparken)</li>
+        <li>Ekstern koordinering (HOFOR)</li>
+        <li>Tilsyn</li>
+      </ul>
+
+    </div>
+
+    <!-- Right: placeholder (no image yet) -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+	<img src="Roerkanalen.jpg" alt="PS_Sundkrogsgade" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+	</div>
+
+  </div>
+
+  <!-- ROW 3: Letbanen L3 (Ramboll) -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">Letbanen L3 (CG Jensen) – Projektering</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">feb. 2021 – feb. 2024 &nbsp;|&nbsp; Tilknyttet Ramboll</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Projektering af afløb fra Rødovre til Lyngby</li>
+        <li>Hydrauliske beregninger og design efter vejreglerne</li>
+        <li>3D-modellering (DANDAS)</li>
+      </ul>
+    </div>
+
+    <!-- Right: placeholder -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+	<img src="Oiu0t.jpg" alt="PS_Sundkrogsgade" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+	</div>
+
+  </div>
+
+  <!-- ROW 4: Letbanen L3 (Tyréns) -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">Letbanen L3 (CG Jensen) – Projektering</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">jan. 2019 – feb. 2022 &nbsp;|&nbsp; Tilknyttet Tyréns Danmark</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Projektering af afløb fra Rødovre til Lyngby</li>
+        <li>Hydrauliske beregninger og design efter vejreglerne</li>
+        <li>3D-modellering af bro og tunnel</li>
+        <li>3D/2D-tegninger for afløb, bro og tunnel</li>
+        <li>BIM/CAD (VDC)</li>
+        <li>Besigtigelser</li>
+      </ul>
+ 
+    </div>
+
+    <!-- Right: placeholder -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+	<img src="ffaacbab-fa8a-460e-8a79-81539f7491ea.png" alt="PS_Sundkrogsgade" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+	</div>
+
+  </div>
+
+  <!-- ROW 5: HOFOR TPW -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">HOFOR TPW ventil og varmevekslerstation</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">2017 – 2018 &nbsp;|&nbsp; Tilknyttet COWI</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Projekterende statiker</li>
+        <li>Stål- og betonkonstruktioner</li>
+        <li>Projektering af afløb</li>
+        <li>3D modellering af bygning, rørgallerier og supports m.m.</li>
+        <li>Tegnestueleder</li>
+        <li>Fagtilsyn på bl.a. beton, stål, jord og kloakarbejder</li>
+        <li>Byggetilladelse og myndighedens behandling m.m.</li>
+      </ul>
+    </div>
+
+    <!-- Right: image -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+      <img src="Platform Amagerværket overblik.JPG" alt="HOFOR TPW projekt"
+        style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+
+  </div>
+
+  <!-- ROW 6: HOFOR Damprør -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">HOFOR – Damprør fra Amagerværket til Fredensplads skakt</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">2015 – 2017 &nbsp;|&nbsp; Tilknyttet COWI</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Projekterende statiker</li>
+        <li>Stål- og betonkonstruktioner</li>
+        <li>3D modellering af bygning, rørgallerier og supports m.m.</li>
+        <li>2D-tegner og tegnestueleder for stålkonstruktioner</li>
+        <li>Fagtilsyn på bl.a. beton og stål</li>
+      </ul>
+    </div>
+
+    <!-- Right: image -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+      <img src="Lille gangbro.JPG" alt="HOFOR Damprør Amagerværket"
+        style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+
+  </div>
+
+  <!-- ROW 7: Statoil -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">Statoil – Skum- og brandvandsprojekt: Udleverings Terminal ved Hedehusene</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">2016 – 2016 &nbsp;|&nbsp; Tilknyttet COWI</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Projekterende statiker</li>
+        <li>Stål- og betonkonstruktioner</li>
+        <li>VDC med fuld interface med eksisterende konstruktioner og produktions modeller</li>
+        <li>3D modellering</li>
+        <li>3D/2D tegner</li>
+        <li>Opmåling og afsætning</li>
+        <li>Tilsyn</li>
+        <li>Indkøb af pumper og udstyr</li>
+      </ul>
+    </div>
+
+    <!-- Right: image -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+      <img src="Betonstøbning.JPG" alt="Statoil skum- og brandvandsprojekt"
+        style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+
+  </div>
+
+  <!-- ROW 8: FBE-POL -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 30px 0; align-items: start;">
+
+    <!-- Left: text box -->
+    <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+      <h4 style="margin: 0 0 6px 0; font-size: 18px;">FBE-POL – Konceptdesign, projektkoordinator og indkøber</h4>
+      <p style="margin: 0 0 4px 0; color: #555; font-size: 14px;">2012 – 2013 &nbsp;|&nbsp; Tilknyttet COWI</p>
+      <hr style="border: none; border-top: 1px solid #ddd; margin: 12px 0;">
+      <p style="margin: 0 0 8px 0; font-weight: bold;">Opgaver/ansvar:</p>
+      <ul style="margin: 0; padding-left: 18px; line-height: 1.8;">
+        <li>Konceptdesign for oplagring og distribution af petroleum, olie og smøremidler</li>
+        <li>Projektkoordinator</li>
+        <li>Indkøbsansvarlig</li>
+        <li>Indkøb af udstyr til projekt eksekvering herunder kraner, gravemaskiner og blokvogne</li>
+        <li>Indkøb af nyt tankanlæg inkl. distributionsrørsystem og import/eksport system med tilhørende faciliteter som pumper, importslanger, udleveringsstander m.m.</li>
+        <li>IKT ansvarlig</li>
+        <li>Udbud og tilbudsvurdering</li>
+        <li>Udarbejde specifikationer for rør, tanke, slanger, pumper og import udstyr</li>
+        <li>Datablad ansvarlig</li>
+        <li>Tanke- og rørsystemer</li>
+        <li>Konceptdesign- og tilstandsrapport</li>
+        <li>Betjeningsvejledninger</li>
+        <li>Stål- og betonkonstruktioner</li>
+        <li>Ortofotokort</li>
+        <li>3D/2D tegner</li>
+        <li>GPS og laser opmåling</li>
+        <li>Tilsyn</li>
+        <li>Indkøb af specialcontainere</li>
+        <li>Indkøb af maskiner</li>
+        <li>Indkøb af rør og tanke</li>
+      </ul>
+    </div>
+
+    <!-- Right: image -->
+    <div style="border-radius: 8px; overflow: hidden; height: 480px;">
+      <img src="Tank på vogn.JPG" alt="Tank på vogn"
+        style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+
+  </div>
+
+  <h3>Teknisk Paradigme</h3>
+  <p>Lars fortæller; "Alauda & Laurentius projekterer kun med kunstig intelligens.
+    Det er en nødvendighed for at klare fremtidens udfordringer og konkurrence.
+	Kontrolberegninger udføres altid som håndberegning på kritiske emner.  
+  </p>
+  <p>› Du skal som kunde kunne følge med i, hvem der arbejder med dine data, hvad der gøres, og hvor det sker.</p>
+  <p>› Du skal have 100% adgang og 100% ejerskab af dine data.</p>
+  <p>› Du skal kunne anvende dine data 100% frit uden omkostninger efter aflevering.</p>
+  <p>
+    Den eneste rimelige omkostning på større projekter er byggestyringssoftware,
+    hvor der er backup, serverhosting og medfølgende support.
+  </p>
+  <p>
+    Jeg kan kun anbefale Dalux, som i mine øjne er det bedste produkt på markedet,
+    og som samtidigt er 100% danskejet.
+    Jeg har kun gode erfaringer med Dalux fra min rådgivertid og min tid som bygherre. 
+    Jeg kan kun give Dalux min varmeste anbefaling."
+  </p>
+  
+  <div style="margin: 20px 0;">
+    <a href="https://www.dalux.com/" target="_blank"
+      style="display:inline-flex; align-items:center; gap:12px; text-decoration:none;
+             background: #ffffff; border-radius:8px; padding: 12px 20px;
+             box-shadow: 0 2px 8px rgba(0,0,0,0.12); transition: box-shadow 0.2s;"
+      onmouseover="this.style.boxShadow='0 4px 16px rgba(232,68,10,0.25)'"
+      onmouseout="this.style.boxShadow='0 2px 8px rgba(0,0,0,0.12)'">
+      <img src="Dalux kun hus klip.png" alt="Dalux" style="width:36px; height:36px; object-fit:contain;">
+      <span style="color:#1a1a1a; font-weight:700; font-size:16px; letter-spacing:0.3px;">dalux</span>
+      <span style="color:#666; font-size:13px; border-left:1px solid #ddd; padding-left:12px;">
+        Anbefalet byggestyringssoftware
+      </span>
+    </a>
+  </div>
+
+  <p>Projekter levers i 100% åbne dataformater.</p>
+  <p>Ingeniørdesign udføres med 100% opensource-programmer.</p>
+  
+  <p>
+    Anvendelse af AI-design, prompt og konfiguration vil variere blandt de tilgængelige modeller.
+    Pr. 05-04-2026 bruges Claude ver. "Sonnet 4.6" og Mistral ver. "Le Chat".
+  </p>
+  <p>Alauda & Laurentius vil bruge Dalux som byggestyringssoftware.</p>
+  <p>Projektering, deling og aflevering af data skal ske via Dalux.</p>
+  <p>Modeller, tegningsarkiv samt opbevaring af scripts og kode skal ligeledes opbevares sikkert hos Dalux.</p>
+  <p>Denne model er 100% den bedste løsning for både større og mindre byggeri og infrastrukturprojekter.</p>
+  <p>Arbejde med "Autodesk", "Bentley" og "Trimble" produkter m.m. udføres men er som udgangspunkt kun ved "hotseat"-arbejde.</p>
+  
+  <h3>Juridisk Paradigme</h3>
+  <p>Lærke fortæller; "Alauda & Laurentius er garant for grundighed i din kontrakt.</p>
+  <p>Her arbejer vi kun med et godt juridisk håndværk, der integrerer den essentielle planlægning i henhold til de faktiske aktiviteter og tidsplaner, som giver de bedste betingelser for en proces uden uforudsete kontraktuelle bump.</p>
+  <p>En grundighed, som sikrer mod misforståelser af hvem, hvor, hvornår og hvad der er en del af entreprisekontrakten.</p>
+  <p>Kontrakten skrives til det individuelle byggeri med en detaljeringsgrad der afspejler tegnings- og tilbudslistene."</p>
+
+</section>
+
+<section class="contact" id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Email: laerke@alauda.dk &nbsp;&nbsp; Telefon: +45 30 55 51 76</p>
+  <p>Email: lars@1aurentius.dk &nbsp;&nbsp; Telefon: +45 21 90 18 44</p>
+
+  <div style="display:flex; gap:40px; margin-top:30px; flex-wrap:wrap;">
+
+    <!-- Lars -->
+    <div style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+      <a href="https://www.linkedin.com/in/lars-n%C3%B8rholm/details/projects/" target="_blank">
+        <img src="lars.png" alt="Lars Emmery-Nørholm"
+          style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:2px solid #0077b5;">
+      </a>
+      <a href="https://www.linkedin.com/in/lars-n%C3%B8rholm" target="_blank"
+        style="text-decoration:none; color:#0077b5; display:flex; align-items:center; gap:6px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0077b5">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.063-1.867-3.063-1.869 0-2.155 1.46-2.155 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.844-1.563 3.042 0 3.604 2.003 3.604 4.609v5.587z"/>
+        </svg>
+        Lars Emmery-Nørholm
+      </a>
+    </div>
+
+    <!-- Lærke -->
+    <div style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+      <a href="https://www.linkedin.com/in/lærke-emmery" target="_blank">
+        <img src="lærke.png" alt="Lærke Emmery-Nørholm"
+          style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:2px solid #0077b5;">
+      </a>
+      <a href="https://www.linkedin.com/in/lærke-emmery" target="_blank"
+        style="text-decoration:none; color:#0077b5; display:flex; align-items:center; gap:6px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#0077b5">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.063-1.867-3.063-1.869 0-2.155 1.46-2.155 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.844-1.563 3.042 0 3.604 2.003 3.604 4.609v5.587z"/>
+        </svg>
+        Lærke Emmery-Nørholm
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logos">
+    <div class="logo-slot"><img src="Dalux kun hus klip.png" alt="Dalux"></div>
+    <div class="logo-slot"><img src="m-boxed-rainbow.png" alt="Partner 2"></div>
+    <div class="logo-slot"><img src="ClaudeIcon-Rounded.png" alt="Claude"></div>
+    <div class="logo-slot"><img src="FreeCAD-symbol.png" alt="FreeCAD"></div>
+    <div class="logo-slot"><img src="qgis-icon128.png" alt="QGIS"></div>
+    <div class="logo-slot"><img src="james-1.png" alt="James"></div>
+    <div class="logo-slot"><img src="httpd.png" alt="Apache"></div>
+    <div class="logo-slot"><img src="A&L-symbol.png" alt="A&L"></div>
+    <div class="logo-slot"><img src="Valknut.png" alt="Valknut"></div>
+    <div class="logo-slot"><img src="Jagt.png" alt="Jagt"></div>
+    <div class="logo-slot"><img src="Heckert_GNU_white.png" alt="GNU"></div>
+  </div>
+  © 2026 Alauda & Laurentius ApS - (Lærke & Lars)
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Web design af Lars Emmery-Nørholm
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.whois.com/whois/1aurentius.dk" target="_blank">WHOIS Kontakt</a>
+</footer>
+
+</body>
+</html>
